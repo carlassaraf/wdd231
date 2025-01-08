@@ -99,8 +99,11 @@ h2 {
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
+figure {
+    text-align: center;
+}
+
 figcaption {
     color: var(--bg-color-2);
-    text-align: center;
     margin-top: 0.75rem;
 }
