@@ -119,9 +119,10 @@ figcaption {
     padding: 0.5rem;
 }
 
-#certificate #class-filters {
+#certificate #course-filters {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     align-items: center;
@@ -133,8 +134,8 @@ button {
 
 .filter {
     background-color: var(--bg-color-2);
-    width: 100px;
-    padding: 0.25rem;
+    width: 200px;
+    padding: 0.5rem;
     border-radius: 0.5rem;
 }
 
@@ -146,4 +147,19 @@ button {
 hr {
     width: 100%;
     margin: 0;
+}
+
+.course {
+    background-color: var(--font-color-2);
+    color: var(--bg-color-2);
+    border-radius: 0.5rem;
+    border: var(--bg-color-2) 1px solid;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.completed {
+    background-color: var(--bg-color-1);
+    color: var(--font-color-1);
 }
