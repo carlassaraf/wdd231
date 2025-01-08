@@ -23,6 +23,6 @@ main {
 
 #certificate #courses {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template: auto auto / 1fr 1fr 1fr;
     gap: 1rem;
 }
