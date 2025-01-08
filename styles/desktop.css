@@ -1,3 +1,22 @@
 .navigation {
     flex-direction: row;
 }
+
+main {
+    display: grid;
+    grid-template: 1fr auto / 1fr auto;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#course-work {
+    grid-column: 1 / 2;
+}
+
+#location {
+    grid-column: 2 / 3;
+}
+
+#certificate {
+    grid-column: 1 / 3;
+}
