@@ -1,0 +1,6 @@
+@media (max-width: 760px) {
+    
+    .navigation {
+        flex-direction: column;
+    }
+}
