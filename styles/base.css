@@ -94,7 +94,6 @@ h2 {
     background-color: var(--bg-color-1);
     margin: 0;
     text-align: center;
-    white-space: nowrap;
 }
 
 .card-title {
@@ -104,6 +103,12 @@ h2 {
 
 figure {
     text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 figcaption {
