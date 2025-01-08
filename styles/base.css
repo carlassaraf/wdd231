@@ -1,6 +1,7 @@
 :root {
     --bg-color-2: #242038;
     --bg-color-1: #A5243D;
+    --bg-color-3: #F7F7F7;
     --hover-color: #D1345B;
     --font-color-2: #CAC4CE;
     --font-color-1: #F7ECE1;
@@ -8,7 +9,7 @@
 
 body {
     font-family: 'Monserrat', sans-serif, monospace;
-    color: var(--font-color-1);
+    color: var(--bg-color-2);
     margin: 0;
     height: 100vh;
 }
@@ -83,14 +84,17 @@ footer p {
     text-align: center;
     padding: 0;
     margin: 0;
+    color: var(--font-color-1);
 }
 
 .card {
     border: var(--font-color-2) 1px solid;
     border-radius: 0.5rem 0.5rem 0 0;
+    background-color: var(--bg-color-3);
 }
 
 h2 {
+    color: var(--font-color-1);
     background-color: var(--bg-color-1);
     margin: 0;
     text-align: center;
@@ -112,7 +116,6 @@ figure img {
 }
 
 figcaption {
-    color: var(--bg-color-2);
     margin-top: 0.75rem;
 }
 
