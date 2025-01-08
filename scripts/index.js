@@ -50,3 +50,11 @@ function displayCourses(courses) {
         container.append(div);
     });
 }
+
+// Add hamburger menu event
+document.querySelector("#hamburger").addEventListener("click", () => {
+    // When clicked, toggle visibility on menu
+    document.querySelector(".navigation").classList.toggle("visible");
+    // Change icon on menu
+    document.querySelector("#hamburger").classList.toggle("close");
+});
