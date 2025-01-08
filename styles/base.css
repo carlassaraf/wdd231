@@ -63,6 +63,11 @@ nav {
     font-weight: 700;
 }
 
+.navigation li .active {
+    color: var(--hover-color);
+    font-weight: 800;
+}
+
 footer {
     background-color: var(--bg-color-1);
     padding: 1rem;
