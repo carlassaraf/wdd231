@@ -51,11 +51,14 @@ nav {
 
 .navigation a {
     display: block;
-    color: var(--font-color-1);
     padding: 0.75rem;
     text-decoration: none;
     text-align: center;
     margin: 0;
+}
+
+a {
+    color: var(--font-color-1);
 }
 
 .navigation a:hover {
@@ -63,7 +66,7 @@ nav {
     font-weight: 700;
 }
 
-.navigation li .active {
+.active {
     color: var(--hover-color);
     font-weight: 800;
 }
@@ -106,4 +109,41 @@ figure {
 figcaption {
     color: var(--bg-color-2);
     margin-top: 0.75rem;
+}
+
+#certificate div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#certificate #class-filters {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: var(--font-color-1);
+}
+
+.filter {
+    background-color: var(--bg-color-2);
+    width: 100px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.filter:hover {
+    color: var(--hover-color);
+    font-weight: 700;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
 }
