@@ -12,5 +12,18 @@
     #certificate #courses {
         display: flex;
         flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    #certificate #course-filters {
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        gap: 0.25rem;
+    }
+
+    .filter {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
