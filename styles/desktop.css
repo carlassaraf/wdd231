@@ -20,3 +20,9 @@ main {
 #certificate {
     grid-column: 1 / 3;
 }
+
+#certificate #courses {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 1rem;
+}
