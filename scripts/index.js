@@ -58,3 +58,16 @@ document.querySelector("#hamburger").addEventListener("click", () => {
     // Change icon on menu
     document.querySelector("#hamburger").classList.toggle("close");
 });
+
+// Credits calculator
+const requiredCredits = courses.reduce((total, course) => total + course.credits, 0);
+const fulfilledCredits = courses.reduce((total, course) => {   
+    // Check whether the course is completed 
+    if(course.completed) { total += course.credits; }
+    return total;
+}, 0);
+const unfulfilledCredits = requiredCredits - fulfilledCredits;
+
+document.querySelector("#credits-required").innerText = requiredCredits;
+document.querySelector("#credits-fulfilled").innerText = fulfilledCredits;
+document.querySelector("#credits-unfulfilled").innerText = unfulfilledCredits;

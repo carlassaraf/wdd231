@@ -181,6 +181,10 @@ hr {
     color: var(--font-color-1);
 }
 
+h3 {
+    margin: 0;
+}
+
 #hamburger {
     display: none;
     width: 100%;
@@ -214,4 +218,33 @@ hr {
 #hamburger.close span:nth-child(3) {
     transform-origin: center;
     transform: rotate(-45deg) translateY(-6px) translateX(6px);
+}
+
+#certificate #credits {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#credits p {
+    margin: 0;
+}
+
+#credits span {
+    font-size: x-large;
+}
+
+#credits-required {
+    color: blue;
+}
+
+#credits-fulfilled {
+    color: green;
+}
+
+#credits-unfulfilled {
+    color: red;
 }
