@@ -30,6 +30,8 @@ async function getProphetData() {
  * @param {Array} prophets Array of prophets
  */
 const displayProphets = (prophets) => {
+    // Clear container
+    cards.innerHTML = "";
     // Iterate through every prophet in the JSON data
     prophets.forEach(prophet => {
 
@@ -43,7 +45,7 @@ const displayProphets = (prophets) => {
         birth.innerText = `Born: ${prophet.birthdate} in ${prophet.birthplace}`;
 
         const death = document.createElement("p");
-        death.innerText = `Died: ${prophet.death}`;
+        death.innerText = `Died: ${(prophet.death)? prophet.death : "Not yet"}`;
         
         const portrait = document.createElement("img");
         portrait.setAttribute("src", prophet.imageurl);
@@ -87,4 +89,46 @@ function numberToOrdinal(number) {
     return number + "th";
 };
 
-getProphetData().then(data => displayProphets(data.prophets));
+let prophets = [];
+getProphetData().then(data => {
+    prophets = data.prophets;
+    displayProphets(prophets);
+});
+
+// Events for the buttons
+document.querySelectorAll("button").forEach(button => {
+
+    button.addEventListener("click", (e) => {
+        let filtered = [];
+
+        switch(e.target.value) {
+
+            case "utah":
+                filtered = prophets.filter(prophet => prophet.birthplace === "Utah");
+                break;
+
+            case "outside":
+                filtered = prophets.filter(prophet => prophet.birthplace === "England");
+                break;
+
+            case "95+":
+                filtered = prophets.filter(prophet => {
+                    const birth = parseInt(prophet.birthdate.slice(-4));
+                    const death = (prophet.death)? parseInt(prophet.death.slice(-4)) : 2024;
+                    const age =  death - birth;
+                    return age > 95;
+                });
+                break;
+
+            case "10+":
+                filtered = prophets.filter(prophet => prophet.numofchildren > 10);
+                break;
+
+            case "15+":
+                filtered = prophets.filter(prophet => prophet.length > 15);
+                break;
+        }
+
+        displayProphets(filtered);
+    });
+});
