@@ -1,0 +1,25 @@
+@media (max-width: 760px) {
+    
+    .navigation {
+        flex-direction: column;
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li a {
+        padding: 0.75rem 0;
+    }
+
+    .navigation.visible {
+        display: block;
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0.25rem;
+    }
+}
