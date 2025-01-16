@@ -61,7 +61,7 @@ footer {
     background-color: var(--bg-color-1);
     padding: 1rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     gap: 0.5rem;
 }
 
@@ -70,4 +70,31 @@ footer p {
     padding: 0;
     margin: 0;
     color: var(--font-color-1);
+}
+
+.footer-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.25rem;
+}
+
+.footer-info p {
+    padding: 0;
+    margin: 0;
+}
+
+#socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#socials img {
+    max-height: 50px;
+    max-width: 50px;
+    height: auto;
+    width: auto;
 }
