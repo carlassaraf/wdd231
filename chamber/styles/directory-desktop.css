@@ -12,6 +12,12 @@ main {
     gap: 1rem;
 }
 
+#directory.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
 #buttons {
     display: flex;
     gap: 1rem;
@@ -23,11 +29,16 @@ main {
     max-width: 25px;
     width: 100%;
     height: auto;
+    pointer-events: none;
 }
 
 #buttons button {
     background-color: var(--bg-color-3);
     padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
 }
 
 .card {
@@ -38,6 +49,15 @@ main {
     align-items: center;
     border: black 1px solid;
     padding: 1rem;
+}
+
+.card.list {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card.list img {
+    display: none;
 }
 
 .card p {

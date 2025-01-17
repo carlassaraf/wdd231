@@ -22,7 +22,7 @@ async function getJSON() {
 }
 
 // Container
-const main = document.querySelector("#directory");
+const memberDirectory = document.querySelector("#directory");
 // Display directory info from JSON
 getJSON().then(directory => {
 
@@ -50,7 +50,27 @@ getJSON().then(directory => {
     
         p.append(web);
         card.append(img, address, number, p);
-        main.append(card);
+        memberDirectory.append(card);
     
+    });
+});
+
+// Get all buttons for displaying
+document.querySelectorAll("button").forEach(button => {
+
+    button.addEventListener("click", (e) => {
+
+        // Get all the cards
+        let cards = document.querySelectorAll(".card");
+        if(e.target.id === "grid-button") {
+            
+            cards.forEach(card => card.classList.remove("list"));
+            memberDirectory.classList.remove("list");
+        }
+        else if(e.target.id === "list-button") {
+
+            cards.forEach(card => card.classList.add("list"));
+            memberDirectory.classList.add("list");
+        }
     });
 });
