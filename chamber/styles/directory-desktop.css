@@ -1,0 +1,26 @@
+main {
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    border: black 1px solid;
+    padding: 1rem;
+}
+
+.card p {
+    margin: 0;
+    padding: 0;
+}
+
+.card p a {
+    color: var(--bg-color-2);
+}
