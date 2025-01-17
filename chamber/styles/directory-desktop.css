@@ -1,9 +1,33 @@
 main {
     padding: 1rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#directory {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     gap: 1rem;
+}
+
+#buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons button img {
+    max-width: 25px;
+    width: 100%;
+    height: auto;
+}
+
+#buttons button {
+    background-color: var(--bg-color-3);
+    padding: 0.5rem;
 }
 
 .card {

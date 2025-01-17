@@ -22,7 +22,7 @@ async function getJSON() {
 }
 
 // Container
-const main = document.querySelector("main");
+const main = document.querySelector("#directory");
 // Display directory info from JSON
 getJSON().then(directory => {
 
