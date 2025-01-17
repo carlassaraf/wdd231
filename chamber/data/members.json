@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Panadería El Sol",
+        "address": "Av. Mitre 500, Quilmes, Buenos Aires",
+        "phone_number": "+54 11 4254-1234",
+        "website_url": "http://www.panaderiaelsol.com",
+        "icon_file": "images/members_panaderia.webp",
+        "membership_level": 1,
+        "additional_info": {
+            "description": "Panadería y confitería con más de 20 años de tradición.",
+            "hours_of_operation": "Lunes a Sábado: 7:00 - 20:00"
+        }
+    },
+    {
+        "name": "Frávega Quilmes",
+        "address": "Calle Rivadavia 123, Quilmes, Buenos Aires",
+        "phone_number": "+54 11 4225-6789",
+        "website_url": "http://www.fravega.com",
+        "icon_file": "images/members_fravega.webp",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "Tienda de electrodomésticos y tecnología.",
+            "hours_of_operation": "Lunes a Viernes: 9:00 - 19:00"
+        }
+    },
+    {
+        "name": "Sanatorio Trinidad Quilmes",
+        "address": "Belgrano 450, Quilmes, Buenos Aires",
+        "phone_number": "+54 11 4278-3456",
+        "website_url": "http://www.sanatoriotrinidad.com.ar",
+        "icon_file": "images/members_trinidad.webp",
+        "membership_level": 3,
+        "additional_info": {
+            "description": "Centro de salud con atención en diversas especialidades.",
+            "hours_of_operation": "24 horas"
+        }
+    },
+    {
+        "name": "McDonald's Quilmes",
+        "address": "Calle Moreno 300, Quilmes, Buenos Aires",
+        "phone_number": "+54 11 4257-8901",
+        "website_url": "http://www.mcdonalds.com.ar",
+        "icon_file": "images/members_mcdonnalds.webp",
+        "membership_level": 1,
+        "additional_info": {
+            "description": "Cadena de comida rápida con menúes para toda la familia.",
+            "hours_of_operation": "Todos los días: 10:00 - 23:00"
+        }
+    },
+    {
+        "name": "Justo Brandzen",
+        "address": "Av. Calchaquí 2345, Quilmes, Buenos Aires",
+        "phone_number": "+54 11 4234-5678",
+        "website_url": "http://www.justobrandzen.com",
+        "icon_file": "images/members_brandzen.webp",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "Restaurante especializado en cocina gourmet y vinos.",
+            "hours_of_operation": "Todos los días: 12:00 - 23:00"
+        }
+    },
+    {
+        "name": "Librería Ramos",
+        "address": "Peatonal Rivadavia 567, Quilmes, Buenos Aires",
+        "phone_number": "+54 11 4223-4567",
+        "website_url": "http://www.libreriaramos.com.ar",
+        "icon_file": "images/members_ramos.webp",
+        "membership_level": 3,
+        "additional_info": {
+            "description": "Librería con amplia variedad de libros y artículos de papelería.",
+            "hours_of_operation": "Lunes a Sábado: 9:00 - 19:00"
+        }
+    },
+    {
+        "name": "Adidas Quilmes",
+        "address": "Calle Sarmiento 789, Quilmes, Buenos Aires",
+        "phone_number": "+54 11 4298-5678",
+        "website_url": "http://www.adidas.com.ar",
+        "icon_file": "images/members_adidas.webp",
+        "membership_level": 1,
+        "additional_info": {
+            "description": "Tienda oficial de Adidas con la última colección de ropa deportiva.",
+            "hours_of_operation": "Lunes a Viernes: 10:00 - 20:00, Sábados: 10:00 - 14:00"
+       }
+    }
+]
+  
