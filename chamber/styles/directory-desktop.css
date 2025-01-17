@@ -10,7 +10,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border: black 1px solid;
     padding: 1rem;
@@ -19,8 +19,15 @@ main {
 .card p {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .card p a {
     color: var(--bg-color-2);
+}
+
+.card img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
 }
