@@ -1,0 +1,8 @@
+@media screen and (max-width: 900px) {
+    
+    #directory {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
